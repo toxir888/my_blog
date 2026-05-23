@@ -58,21 +58,28 @@
         <h3>🚀 Amaliyot & Yutuqlar</h3>
         <p>TryHackMe platformasidagi faoliyatimda Web, Network, va Cryptography yo'nalishlarida chuqur laboratoriyalarni yakunlaganman. Doimiy ravishda top 10% global reytingda bo'lish — bu mening izchilligim ko'rsatkichi.</p>
 
-        <div class="contact-buttons" style="margin-top: 20px;">
+       <div class="contact-buttons" style="margin-top: 20px;">
     
-    <a href="https://forms.gle/Qy1Z14bbN3QBYYR76" target="_blank" style="text-decoration: none;">
-        <button style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer; margin-right: 10px;">
+    <a href="https://forms.gle/Qy1Z14bbN3QBYYR76" target="_blank" onclick="showTelegram()">
+        <button style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">
             Formani to'ldirish
         </button>
     </a>
 
-    <a href="https://t.me/mtalv" target="_blank" style="text-decoration: none;">
+    <a id="tg-btn" href="https://t.me/mtalv" target="_blank" style="text-decoration: none; display: none; margin-left: 10px;">
         <button style="padding: 10px 20px; background-color: #28a745; color: white; border: none; cursor: pointer;">
-            Telegramga yozish
+            Telegram orqali bog'lanish
         </button>
     </a>
     
 </div>
+
+<script>
+    function showTelegram() {
+        // Forma bosilganda Telegram tugmasini ko'rsatish
+        document.getElementById('tg-btn').style.display = 'inline-block';
+    }
+</script>
         
         <footer>[SYSTEM READY] - CONNECTION SECURE - STATUS: ONLINE</footer>
     </div>
